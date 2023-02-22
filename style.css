@@ -1,0 +1,150 @@
+body {
+    background: linear-gradient(to right, #e6e6e6, #e8dcdc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+label {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+}
+
+input[type="text"] {
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    color: #333;
+    background-color: #f7f7f7;
+    border: 1px solid #d8d8d8;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+input[type="text"]:hover {
+    border: 1px solid rgb(197, 181, 181);
+    background-color: #e8e8e8;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #333;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #444;
+    transform: scale(1.1);
+}
+
+.output {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.header {
+    font-family: 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+#cityListContainer {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 300px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    right: 800;
+    top: 445;
+}
+
+#cityList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 200px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+#cityList li {
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 1px solid #ccc;
+}
+
+#cityList li:hover {
+    background-color: #8c9497;
+    color: #fff;
+}
+
+#cityList::-webkit-scrollbar {
+    width: 5px;
+    background-color: #f7f7f7;
+}
+ 
+#cityList::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+#errorMessage {
+    display: none;
+    color: lightcoral;
+    font-size: 12px;
+    position: absolute;
+    top: 450px;
+    left: 910px;
+}
+
+#cityInput.incorrectCity {
+    transition: background-color 0.5s ease-in-out;
+    background-color: rgb(238, 149, 149);
+}
+
+
+  
+  
+  
+
+

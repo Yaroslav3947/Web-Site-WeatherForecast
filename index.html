@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Weather Forecast</h1>
+        </div>
+        <label for="city">City:</label>
+        <input type="text" id="cityInput" name="city">
+        <br><br>
+        <div id="cityListContainer" style="display: none;">
+            <ul id="cityList">
+            </ul>
+        </div>
+        <div id="errorMessage">City not found</div>
+        <label for="temperature">Temperature:</label>
+        <input type="text" id="temperature" name="temperature" readonly>
+        <br><br>
+        <button id="submitButton">Find</button>
+    </div>
+    <br><br>
+    <script src="script.js"></script>
+</body>
+
+</html>
